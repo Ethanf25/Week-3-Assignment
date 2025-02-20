@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Best Fishing Gear</title>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--Create a new website using HTML and Bootstrap. **DONE**
+The website must include the following:
+At least 2 pages. **DONE**
+A Bootstrap navbar, table, and form. **DONE**
+Bootstrap grid used throughout to format elements  **DONE**
+Elements should stack vertically when the window is small     **DONE**        -->
+
+
+    <ul class="nav nav-underline justify-content-center bg-success"> <!--Navbar, centered text and green-->
+        <li class="nav-item"></li> <!--Specified list class-->
+            <a class="nav-link text-light bg-gradient" href="Page1.html">Home</a> <!--Added gradient around the nav links-->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light bg-gradient" href="Page2.html">Info</a>
+        </li>
+    </ul>
+
+    <br>
+
+    <h1 class="container text-center">Other Information</h1><br> <!--Header describing the page-->
+
+    
+    <div class="container">  <!--Contianer doesn't take up the width of the page-->
+        <div class="row">
+            <div class="col-md-6"> <!--First column and size-->
+                <h2>Contact For More Info</h2> <!--Header for form-->
+                <form>
+                    <div class="mb-3"> <!--Margin size of 3-->
+                        <label for="name" class="form-label">Name</label> <!--Info bar label #1-->
+                        <input type="text" class="form-control w-100" id="name" placeholder="Enter your name"> <!--Input text line, with a placeholder-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label> <!--Info bar label #2-->
+                        <input type="email" class="form-control w-100" id="email" placeholder="Enter your email"> <!--Input text line, with a placeholder-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label> <!--Info bar label #3-->
+                        <textarea class="form-control w-100" id="message" rows="3" placeholder="Enter your message"></textarea> <!--Input text line, with a placeholder and 3 lines of space for a message-->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button> <!--Submit buttom with a btn-primary blue button-->
+                </form> <!--Closing element tag-->
+            </div>
+            <div class="col-md-6"> <!--Next column/table-->
+                <h2>Other Fishing Equipment</h2> <!--Header for said table-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th> <!--Sub categories-->
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!--Creates a row for the content categories-->
+                            <td>Fly Fishing Rod</td> <!--Table data, specifies the equipment -->
+                            <td>Rivers and/or Creek fishing</td> <!--Table data, specifies the usage -->
+                        </tr>
+                        <tr>
+                            <td>Spinning Rod</td> <!--Table data, specifies the equipment -->
+                            <td>Shore fishing, fishing from a boat, anywehre really</td> <!--Table data, specifies the usage -->
+                        </tr>
+                        <tr>
+                            <td>Casting Rod</td> <!--Table data, specifies the equipment -->
+                            <td>Similar to a spinning rod, just with a different reel</td> <!--Table data, specifies the usage -->
+                        </tr>
+                        <tr>
+                            <td>Ice Rod</td> <!--Table data, specifies the equipment-->
+                            <td>Pretty self explanatory, used for ice fishing</td> <!--Table data, specifies the usage -->
+                        </tr>
+                        <tr>
+                            <td>Salmon Rod</td> <!--Table data, specifies the equipment -->
+                            <td>Much longer than a traditional rod, used while fishing off a boat or in a river/creek</td> <!--Table data, specifies usage -->
+                        </tr>
+                    </tbody>
+                </table> <!--Closing tags-->
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

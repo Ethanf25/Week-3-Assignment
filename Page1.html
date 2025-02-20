@@ -1,25 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 Website</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Best Fishing Gear</title>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
+<!--Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages. **DONE**
+A Bootstrap navbar, table, and form. **DONE**
+Bootstrap grid used throughout to format elements **DONE**
+Elements should stack vertically when the window is small    **DONE**--> 
 
-    <div class="alert alert-primary" role="alert">
-        It works!
-    </div>
-    <div>
+
+    <ul class="nav nav-underline justify-content-center bg-success"> <!--This is where the navbar info is oriented and styled, in this case I centered it with a green color-->
+      <li class="nav-item"> <!--Origin element to create the first link-->
+      <a class="nav-link text-light bg-gradient" href="Page1.html">Home</a> <!--Filling for the link to page 1 (home), and I added a light style to stand it out at the top of the page and then added a green gradient -->
+      </li>
+      <li class="nav-item"> <!--Origin element to create second link-->
+      <a class="nav-link text-light bg-gradient" href="Page2.html">Info</a> <!--Filling for the link to page 2 (info), and I added a light style to stand it out at the top of the page and then added a green gradient -->
+      </li>
+    </ul>             <!--End tags for the list and unordered list-->
+
+    <br>   <!--Break between the nav and the first header-->
+
+    <h1 class="container text-center">What Fishing Gear Is Right For Me?</h1><br>        <!--Header-->
+    <div class="container text-left">       <!--Specifies where the text is located-->
+      <div class="row">             <!--My row for the first card-->
+        <div class="col-md">  <!--Column size-->
+          <div id="card-1" class="card bg-secondary mb-5" style="border: 2px solid black;">   <!--This is the styling for the first card, bg-secondary turned the background gray with a margin size of 5 and an added solid black border-->
+            <div class="card-body"> <!--Specifies the card being worked with-->
+              <h2 class="card-title">Clothing</h2>   <!--Simple header for the card-->
+              <img src="https://cdn.outsideonline.com/wp-content/uploads/2023/05/fishing-gear-sgg23_s.jpg" class="img-fluid float-end" alt="Clothing" style="width: 25%; border-radius: 2ch; border: 2px solid rgb(15, 163, 52);"> <!--The image linked here has been floated to the right of the text with a rounded green border-->
+              <p class="font" style="font-size: 20px;"> <!--Changed the font style to make it more legible-->
+        <p class="font" style="font-size: 20px;"> <!--Same as above, changed the font style-->
+        What type of clothing is best for each occasion? Well, for starters it depends on the weather
+        type and what season. If you're looking to fish during the summer, for sure just shorts, a t-shirt,
+        and maybe some sunglasses with a hat to protect yourself from the sun! Now it's flipped if you're wanting
+        to fish in let's say the winter time, you'll want to be bundles up, so you'll need a lot more sucha as a pair
+        of bibs, a thick jacket, boots, a hat, a face shield, and some warm gloves. Definitely would want to bring
+        a heater and an ice shanty to help keep warm! Also, comfort is key, you'd want to be wearing something you'd be comfortable 
+        being in for hours on end.
         
+        </p>   <!--Paragraph describing the card-->
+         </div>
     </div>
+    </div>
+  </div>
+</div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<div class="container text-left mb-5 fs-2"> <!--Specifies the placement of the card with a margin of 5-->
+  <div class="row"> <!--Row element-->
+    <div class="col-md"> <!--Column size-->
+    <div id="card-1" class="card bg-secondary" style="border: 2px solid black;"> <!--Style of the card, gray again with a solid black border-->
+      <div class="card-body"> <!--The card being worked on-->
+      <div class="float-start"> <!--Floated photo to the left of the info-->
+        <h2 class="card-title">Equipment</h2> <!--Card title #2-->
+        <img src="https://www.fishtalkmag.com/sites/default/files/inline-images/fly-rod-reel.jpg" class="img-fluid float-start me-3" alt="Gear/Equipment" style="width: 35%; border-radius: 2ch; border: 2px solid rgb(15, 163, 52);"> <!--Image with styling-->
+        <p class="font" style="font-size: 20px;"> <!--Same as the first card, styled to make it more legible-->
+        Equipment is a little bit tricky depending on what type of species you are going for. For me, personally, I enjoy all year fishing, Spring, Summer, Fall, and Winter!
+        Depending on the type of species you are going for, in this instance, let's say it's fall time and I want to fish for salmon in the river. In this case I would need
+        a net for sure, a fly and/or casting rod with a reel that can handle the currents and drift down stream. Lures on the otherhand are a vast variety of different combos,
+        Salmon are more into flies, eggs, and other insects, so just about anything that resembles one of those would work great! 
+        <br>
+        </p> 
+      </div>
+    </div>    <!--Break and closing tags-->
+    </div>
+  </div>
+</div>
+<br>
+<h1 class="text-center font-size; 10ch ">Best Lure/Bait Types (In My Opinion)</h1> <!--Header for the columns below-->
 
-    <img src="https://media4.giphy.com/media/3oEjI4sFlp73fvEYgw/giphy.gif?cid=6c09b952cf35tvdfrsv943ey6whbbxsd5ojb40vhob5rhxpt&ep=v1_gifs_search&rid=giphy.gif&ct=g">
-    
-</body>
+<div class="container">  <!--Container doesn't take up the whole width-->
+  <div class="row"> <!--Specified wfirst tow-->
+    <div class="col-md-6 text-center" style="border: 2px solid black; border-radius: 5px;">Spawn Bags  <!--First styled column with a black bordered radius-->
+    </div>
+    <div class="col-md-6 text-center" style="border: 2px solid black; border-radius: 5px;">Artificial Flies <!--Second styled column with a black bordered radius-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" style="border: 2px solid black; border-radius: 5px;">Spoons <!--Third styled column with a black bordered radius-->
+    </div>
+    <div class="col-md-6 text-center" style="border: 2px solid black; border-radius: 5px;">Beads <!--Fourth styled column with a black bordered radius-->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
+
+  
